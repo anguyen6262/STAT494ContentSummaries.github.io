@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+
 }
 :root {
     --base-color1:linear-gradient(
@@ -13,7 +14,6 @@
 
 .navbar {
     top:0;
-    left:0;
     position: fixed;
     background-color: black;
     display: flex;
@@ -27,6 +27,12 @@
     text-decoration: none;
     color:white;
     font-size: 0.7em;
+    transition: 0.5s ease;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    color:aqua;
 }
 
 .intro-screen {
@@ -50,6 +56,7 @@
 
 .text {
     grid-column:2/-1;
+    /* cursor: text; */
 }
 
 .contact-section{
@@ -67,3 +74,40 @@ h2 {
 i {
     padding:0.5rem 1.4rem;
 }
+
+.nav-dropMenu {
+    position: fixed;
+    height:10vh;
+    width:100vw;
+    z-index: 1000;
+}
+
+.nav-dropMenu ul {
+    padding-top:5%;
+}
+
+.nav-dropMenu ul li {
+    line-height: 5%;
+    list-style: none;
+}
+
+.nav-dropMenu ul li a, .nav-dropMenu ul li span {
+    display:block;
+    height: 5%;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: no-wrap;
+}
+
+/* .summaries-menu {
+    transition:0.3s;
+    /* cursor: pointer; */
+/* } */
+
+/* .summaries-menu li {
+    opacity: 0;
+} */
+
+/* .summaries-menu.active {
+    display: block;
+} */ 
