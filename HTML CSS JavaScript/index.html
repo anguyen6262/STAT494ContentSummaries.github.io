@@ -12,14 +12,17 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
         <nav class="navbar">
-        <li>
-            <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <div class="nav-dropMenu">
+        <div class="nav-link">
             <ul>
-            <li><span>Background Knowledge</span></li>
+            <li>
+            <a class="nav-link" href="index.html">Home</a>
+            </li>
+            </ul>
+        </div>
+        <div  class="nav-dropMenu nav-link" id="background-knowledge">
+            <ul>
+            <li><span id="BkButton">Background Knowledge</span></li>
             <li>
             <a class="nav-link" href="genetics.html">Genetics</a>
             </li>
@@ -29,9 +32,9 @@
             </ul>
         </div>
         
-        <div class="nav-dropMenu">
+        <div class="nav-dropMenu nav-link" id="content-summaries">
            <ul>
-            <li><span>Content Summaries</span></li>
+            <li onmouseover="content()" onmouseout="content(t)">Content Summaries</li>
             <li>
             <a class="nav-link" href="content-summary-1.html">Content Summary 1</a>
             </li>
@@ -42,10 +45,9 @@
             <a class="nav-link" href="content-summary-3.html">Content Summary 3</a>
             </li> 
             </ul> 
-        </div>
-        
-    </nav>
-    </div>
+        </div> 
+        </nav>
+   
     <div class="intro-screen">
         <h1>Statistic Genetics Journal</h1>
     </div>

@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-
+    
 }
 :root {
     --base-color1:linear-gradient(
@@ -11,22 +11,31 @@
   );
 
 }
+body {
+    background: black;
+}
 
 .navbar {
     top:0;
+    left:0;
     position: fixed;
     background-color: black;
     display: flex;
-    width:100%;
+    width:100vw;
     justify-content: flex-end;
-    align-items: center;
-    height: 5%;
+    align-items: flex-start;
+    height: 10%;
+    font-size: 1rem;
+}
+
+.navbar div ul li {
+    padding:5px 25px 30px 0;
+    list-style: none;
 }
 
 .nav-link {
     text-decoration: none;
     color:white;
-    font-size: 0.7em;
     transition: 0.5s ease;
     text-transform: uppercase;
 }
@@ -43,6 +52,7 @@
     padding:auto auto;
     border-color:black;
     border:1px 1px;
+    font-size:1.5rem;
 }
 
 .content-summary {
@@ -56,7 +66,6 @@
 
 .text {
     grid-column:2/-1;
-    /* cursor: text; */
 }
 
 .contact-section{
@@ -75,39 +84,44 @@ i {
     padding:0.5rem 1.4rem;
 }
 
-.nav-dropMenu {
-    position: fixed;
-    height:10vh;
-    width:100vw;
-    z-index: 1000;
+i:hover {
+    color: aqua;
+    transition: 0.5s ease;
 }
+/* .nav-dropMenu {
+    background: blue;
+} */
 
-.nav-dropMenu ul {
-    padding-top:5%;
-}
+/* .nav-dropMenu ul {
+    width: 1rem;
+    height: 1rem;  
+} */
 
-.nav-dropMenu ul li {
-    line-height: 5%;
+/* .nav-dropMenu ul li:nth-child(n+2) {
+    background:black;
     list-style: none;
-}
+    display: block;
+    visibility: hidden;
+    overflow: hidden;
+    text-transform: uppercase;
+    white-space: no-wrap;
+    opacity:0;
+} */
 
-.nav-dropMenu ul li a, .nav-dropMenu ul li span {
+/* .bottom {
+    color:red;
+    position:absolute;
+    top:50%;
+    left:50%;
+    height:100px;
+    width:200px;
+    border-radius: 10px 0 0 0;
+    border:10px;
+} */
+
+
+/* .nav-dropMenu ul li a, .nav-dropMenu ul li span {
     display:block;
     height: 5%;
     text-decoration: none;
-    text-transform: uppercase;
-    white-space: no-wrap;
-}
-
-/* .summaries-menu {
-    transition:0.3s;
-    /* cursor: pointer; */
-/* } */
-
-/* .summaries-menu li {
-    opacity: 0;
 } */
-
-/* .summaries-menu.active {
-    display: block;
-} */ 

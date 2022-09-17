@@ -1,16 +1,42 @@
+// let toggleNavStatus = false;
 
-const Summaries = document.querySelector(".summaries-menu");
+// let toggleNav = function() {
+//     let getContentDropMenu = document.querySelectorAll("#content-summaries.nav-dropMenu ul li:nth-child(n+2)");
+//     let getBKDropMenu = document.querySelectorAll("#background-knowledge.nav-dropMenu ul li:nth-child(n+2)");
+//     let getContentButton = document.getElementById('CsButton');
+// }
+  
+let getContentDropMenu = document.querySelectorAll("#content-summaries.nav-dropMenu ul li:nth-child(n+2)");
 
-addEventListener('hover',() => Summaries.classList.toggle("active"))
 
-function contact() {
-    <div class="contact-section" id="author-contact-information">
-    <label > Author Contact Information</label>
-       <div class="social-icons">
-        <a href="https://github.com/anguyen6262"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/andrew-nguyen-6b72b0216/"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://www.facebook.com/profile.php?id=100079858971896"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.instagram.com/andrew.d.ng/"><i class="fab fa-instagram"></i></a>
-    </div>
-    </div>
-}
+function content(){
+    
+        if(getContentDropMenu.style.visibility=="hidden") {
+            for(let i = 0; i < getContentDropMenu.length; i++) {
+                getContentDropMenu[i].style.visibility = "visible";
+            }
+
+        } else {
+            for(let j = 0; j < getContentDropMenu.length; j++) {
+                getContentDropMenu[j].style.visibility = "hidden";
+            
+            }
+            
+        }
+    };
+        // getContentButton.style.color = "red";
+        // for(let i = 0; i < getContentDropMenu.length; i++) {
+        //             getContentDropMenu[i].style.visibility = "visible";
+        //             getContentDropMenu[i].style.opacity="0.8";
+    
+    // if(getContentButton:hover) {
+    //     for(let i = 0; i < getContentDropMenu.length; i++) {
+    //         getContentDropMenu[i].style.visibility = "visible";
+    //         getContentDropMenu[i].style.opacity="0.8";
+    //     }
+        // for(let i = 0; i < getBKDropMenu.length; i++) {
+        //     getBKDropMenu[i].style.visibility = "visible";
+        //     getBKDropMenu[i].style.opacity="0.8";
+        // }
+
+        // toggleNavStatus = true;
