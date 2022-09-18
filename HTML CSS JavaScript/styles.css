@@ -10,6 +10,11 @@
     rgb(204, 102, 255)
   );
 
+  --strand1-color:red;
+  --strand2-color:blue;
+  --nucleotide-color:green;
+
+
 }
 body {
     background: black;
@@ -26,6 +31,7 @@ body {
     align-items: flex-start;
     height: 10%;
     font-size: 1rem;
+    box-shadow: 0 0 200px gray;
 }
 
 .navbar div ul li {
@@ -41,7 +47,9 @@ body {
 }
 
 .nav-link:hover {
-    color:aqua;
+    /* color:aqua; */
+    box-shadow:0 20px 10px aqua;
+/* linear-gradient(0deg, #2980b9, #6dd5fa, #ffffff) */
 }
 
 .intro-screen {
@@ -108,16 +116,39 @@ i:hover {
     opacity:0;
 } */
 
-/* .bottom {
-    color:red;
-    position:absolute;
+.top {
+    background:red;
+    position:relative;
     top:50%;
     left:50%;
-    height:100px;
-    width:200px;
-    border-radius: 10px 0 0 0;
-    border:10px;
-} */
+    height:70px;
+    width:80px;
+    border-radius: 0 0 50px 0;
+    border:40px;
+    border-color: blueviolet;
+}
+.middle {
+    background:red;
+    position:relative;
+    top:50%;
+    left:50%;
+    height:70px;
+    width:80px;
+    border-radius: 50px 0 0 50px;
+    border:40px;
+    border-color: blueviolet;
+}
+.bottom {
+    background:red;
+    position:relative;
+    top:50%;
+    left:50%;
+    height:70px;
+    width:80px;
+    border-radius: 0 50px 0 0;
+    border:40px;
+    border-color: blueviolet;
+}
 
 
 /* .nav-dropMenu ul li a, .nav-dropMenu ul li span {
