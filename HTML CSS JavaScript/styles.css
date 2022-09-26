@@ -99,7 +99,7 @@ i:hover {
     height: 1rem;  
 } */
 
-/* .nav-dropMenu ul li:nth-child(n+2) {
+.nav-dropMenu ul li:nth-child(n+2) {
     background:black;
     list-style: none;
     display: block;
@@ -108,7 +108,7 @@ i:hover {
     text-transform: uppercase;
     white-space: no-wrap;
     opacity:0;
-} */
+}
 
 /* .bottom {
     color:red;
