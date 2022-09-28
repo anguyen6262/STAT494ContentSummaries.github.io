@@ -13,6 +13,24 @@
 </head>
 <body>
     <h2 id="statistics-background-knowledge">Statistic Background Knowledge</h2>
+    <section>
+        Dimension Reduction: Create new variables as functions of existing ones. They must be linear combinations of the original variables. This cuts down the total number of variables. These new variables are called directions. The variation of these variables should be maximal.
+PCA 
+finds the directions of maximal variation.
+Changes coordinate system.
+Principal Component 1 (PC1):  direction in which measurements vary the most. Points toward (1,1). Is linear combination presented by East = 1right + 1front. East is a new variable that is a linear combination of right and front.
+Principal Component 2 (PC2): directions that are orthogonal. Points toward (-1,1). Is a linear combination represented by North = -1right +1Front 
+Loading: coefficients in linear combinations.
+PC Scores: # of PC in each case.
+Num of PC’s is min(n,p) where n is the case and p is the variable.
+The total amount of variation in the data is the sum of variance of each variable.
+Variance:
+Scree plot: Plots the proportion of variance for each PCA. It is usually paired with an accumulative version of that plot.
+Score plot: Plots the scores of 2 pcs against each other for all cases.
+Graph the data of of each individual with their snps onto a graph. Then average the data the on the axis then make the average the origin of the graph. This centers the data on the origin. All the clusters are still in the same position. Then a line is draw that best fits the data and essentially acts as a line of best fit. This line is determined by sum of squares method. This line is called Principal component 1 or PC1. Each Principal component is a linear combination of the variables.
+PC2 is a line orthogonal to PC1
+
+    </section>
     <footer>
         <div class="contact-section" id="author-contact-information">
         <label > Author Contact Information</label>
