@@ -103,12 +103,17 @@ i:hover {
     background:black;
     list-style: none;
     display: block;
-    visibility: hidden;
+    visibility: visible;
     overflow: hidden;
     text-transform: uppercase;
     white-space: no-wrap;
     opacity:0;
 }
+
+/* .nav-dropMenu ul li:nth-child(n+2) :hover {
+    visibility: visible;
+    
+} */
 
 /* .bottom {
     color:red;

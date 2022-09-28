@@ -6,24 +6,24 @@
 //     let getContentButton = document.getElementById('CsButton');
 // }
   
-let getContentDropMenu = document.querySelectorAll("#content-summaries.nav-dropMenu ul li:nth-child(n+2)");
+// let getContentDropMenu = document.querySelectorAll("#content-summaries.nav-dropMenu ul li:nth-child(n+2)");
 
 
-function content(){
+// function content(){
     
-        if(getContentDropMenu.style.visibility=="hidden") {
-            for(let i = 0; i < getContentDropMenu.length; i++) {
-                getContentDropMenu[i].style.visibility = "visible";
-            }
+//         if(getContentDropMenu.style.visibility=="hidden") {
+//             for(let i = 0; i < getContentDropMenu.length; i++) {
+//                 getContentDropMenu[i].style.visibility = "visible";
+//             }
 
-        } else {
-            for(let j = 0; j < getContentDropMenu.length; j++) {
-                getContentDropMenu[j].style.visibility = "hidden";
+//         } else {
+//             for(let j = 0; j < getContentDropMenu.length; j++) {
+//                 getContentDropMenu[j].style.visibility = "hidden";
             
-            }
+//             }
             
-        }
-    };
+//         }
+//     };
         // getContentButton.style.color = "red";
         // for(let i = 0; i < getContentDropMenu.length; i++) {
         //             getContentDropMenu[i].style.visibility = "visible";
