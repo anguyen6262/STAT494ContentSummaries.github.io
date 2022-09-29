@@ -72,6 +72,7 @@ button:hover {
 
 .intro-screen {
     background: var(--base-gradient);
+    background-image: url("https://img.freepik.com/premium-vector/dna-background-blue-abstract-helix-biotechnology-hexagon-molecular-texture_229548-1324.jpg?w=996");
     height: 100vh;
     text-align: center;
     line-height: 100vh;
