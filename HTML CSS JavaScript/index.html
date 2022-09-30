@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
     <link
       rel="stylesheet"
@@ -14,31 +15,27 @@
 <body>
     <header>
         <nav class="navbar">
-        <div class="logo">SGJ</div>
-        <div>
-            <a><button class="nav-link" href="index.html">Home</button></a>
-        </div>
-
-        <div>
-            <button class="nav-link" id="dropMenuBKButton">Background Knowledge</button>
-            <div class="dropMenu" id="dropMenuBK">
-            <ul>
-                <li><a class="nav-link" href="genetics.html">Genetics</a></li>
-                <li><a class="nav-link" href="statistics.html">Statistics</a></li>
-            </ul>
+        <h1 class="logo">SGJ</h1>
+        <ul>
+        <li><a href="index.html" class="nav-link main-link">Home</a></li>
+        <li><a href="#" class="nav-link main-link">Background Knowledge<i class="fa fa-carat-down"></i></a>
+            <div class="dropMenu">
+                <ul>
+                    <li><a class="nav-link" href="genetics.html">Genetics</a></li>
+                    <li><a class="nav-link" href="statistics.html">Statistics</a></li>
+                </ul>
             </div>
-        </div>
-        
-        <div>
-            <button onclick="toggleDropMenu()" id="dropMenuCSButton" class="nav-link">Research Papers</button> 
-            <div class="dropMenu" id="dropMenuCS">
-            <ul>
-                <li><a class="nav-link" href="research-paper-1.html">Research Paper 1</a></li>
-                <li><a class="nav-link" href="research-paper-2.html">Research Paper 2</a></li>
-                <li><a class="nav-link" href="research-paper-3.html">Research Paper 3</a></li>
-            </ul>
-           </div>
-        </div> 
+        </li>    
+        <li><a href="#" class="nav-link main-link">Research Papers<i class="fa fa-carat-down"></i></a> 
+            <div class="dropMenu">
+                <ul>
+                    <li><a class="nav-link" href="research-paper-1.html">Research Paper 1</a></li>
+                    <li><a class="nav-link" href="research-paper-2.html">Research Paper 2</a></li>
+                    <li><a class="nav-link" href="research-paper-3.html">Research Paper 3</a></li>
+                </ul>
+            </div>
+        </li> 
+        </ul>
         </nav>
    
     <div class="intro-screen">
@@ -50,12 +47,13 @@
     <h2>Our Mission</h2>
     <p> SGJ seeks to explain the field of Genetic Statistics through exploring key research papers in the field.
         We will explain core concepts within the fields of Genetics and Statistics. This knowledge is crucial in 
-        in explaining the complex concepts in Statistic Genetics. </p>
+        in explaining the complex concepts in Statistic Genetics.  </p>
     
 
     <h2>What is Genetic Statistics?</h2>
-    </p>Genetic Statistics explores the relationship between ancestry and certain genetic traits.</p>
-    <img src="C:\Users\andre\OneDrive\Desktop\Fall 2022\COMP 128\HW\STAT494ContentSummaries\JC#3PCA.jpg" alt="hello">
+    </p>Genetic Statistics explores the relationship between ancestry and certain genetic traits.Statistic Genetics studies genetics with statistical
+        methods and tools. Some software used are Rstudio and Python. They use libraries such as PLINK to generate amazing 
+        graphics.</p>
 
     <footer>
         <div class="contact-section" id="author-contact-information">
