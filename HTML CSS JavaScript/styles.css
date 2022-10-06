@@ -9,18 +9,19 @@
 
 :root {
     --base-gradient:linear-gradient(
-    135deg,
-    #F6EFA6,
-    #F0D2D1,
-    #824C71
+    180deg,
+    #F6EFA6 20%,
+    #F0D2D1 40%,
+    #824C71 
   );
     --base-color1:rgb(24, 154, 171);
 
 }
 
 body {
-    padding-top: 5%;
+    padding-top: 1.5rem;
 }
+
 .logo {
     background-image:var(--base-gradient);
     background-size: 100%;
@@ -31,10 +32,9 @@ body {
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent; 
-    -moz-text-fill-color: transparent;
-    
-    
+    -moz-text-fill-color: transparent;    
 }
+
 .navbar {
     top:0;
     left:0;
@@ -54,27 +54,23 @@ body {
     padding-right:1rem;
 }
 
-.navbar ul li {
+.navbar ul li{
     padding: 10px 30px;
     position: relative;
 }
 
-.navbar ul li a {
-    /* margin:1.3rem 1rem auto auto; */
-    text-decoration: none;
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    transition: all 0.3s;
-    color:white
-}
-
-.navbar ul li a:hover {
+.nav-link:hover {
     box-shadow:0 1rem 1px -0.5rem white;
 }
 
 .nav-link {
     transition: 0.5s ease;
     text-transform: uppercase;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    transition: all 0.3s;
+    color:white
 }
 
 .dropMenu {
@@ -93,14 +89,14 @@ body {
     display: block;
     position: absolute;
     top:100%;
-    background:var(--base-color1);
-   
+    background:var(--base-color1);   
 }
 
 .navbar ul li:hover .dropMenu ul {
     display: block;
     text-align: center;
     padding: 0;
+    margin:0;
 }
 
 .intro-screen {
@@ -109,13 +105,11 @@ body {
     background-size:cover;
     height: 100vh;
     text-align: center;
-    line-height: 100vh;
-    padding:auto auto;
-    margin-right: auto;
-    border-color:black;
-    border:1px 1px;
+    padding-top: 20%;
     font-size:1.5rem;
 }
+
+
 
 .contact-section{
     text-align: center;
@@ -134,7 +128,7 @@ i:hover {
     transition: 0.5s ease;
 }
 
-i {
+.social-icons a i {
     padding:0.5rem 1.4rem;
 }
 
@@ -143,15 +137,29 @@ img {
     width: 30%;
     height: 30%;
     margin: 1rem auto;
-
 }
 
 .intro-screen img {
     display: block;
-    margin-right: auto ;
+}
+
+.intro-screen h1 {
+    color: navy;
 }
 
 .fa {
     color: white;
+    /* display: block; */
+}
+
+.dropMenu-1 {
+    display: none;
+}
+
+.dropMenu ul li:hover .dropMenu-1 {
     display: block;
+    position: absolute;
+    top:0;
+    left:14rem;
+    background: var(--base-color1);
 }

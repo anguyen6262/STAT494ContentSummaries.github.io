@@ -9,34 +9,44 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 <body>
   <header>
     <nav class="navbar">
-      <h1 class="logo">SJ</h1>
-      <ul>
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="#" class="nav-link">Background Knowledge</a>
-              <div class="dropMenu" id="dropMenuBK">
-                  <ul>
-                      <li><a class="nav-link" href="genetics.html">Genetics</a></li>
-                      <li><a class="nav-link" href="statistics.html">Statistics</a></li>
-                  </ul>
-              </div>
-          </li>    
-          <li><a href="#" class="nav-link main-link">Research Papers</a> 
-              <div class="dropMenu" id="dropMenuResearch">
-                  <ul>
-                      <li><a class="nav-link" href="research-paper-1.html">Research#1</a></li>
-                      <li><a class="nav-link" href="research-paper-2.html">Research#2</a></li>
-                      <li><a class="nav-link" href="research-paper-3.html">Research#3</a></li>
-                  </ul>
-              </div>
-          </li> 
-      </ul>
-      </nav>
-  </header>
+    <h1 class="logo">L%</h1>
+    <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="#" class="nav-link">Background Knowledge <i class="fa-solid fa-caret-down"></i></a>
+            <div class="dropMenu" id="dropMenuBK">
+                <ul>
+                    <li><a class="nav-link" href="genetics.html">Genetics</a></li>
+                    <li><a class="nav-link" href="#">Statistics <i class="fa-solid fa-caret-right"></i></a>
+                    <div class="dropMenu-1">
+                        <ul>
+                            <li><a class="nav-link" href="concepts.html">Concepts</a></li>
+                            <li ><a class="nav-link" href="plots.html">Plots</a></li>
+                        </ul>
+                    </div>
+                    </li>
+                </ul>
+            </div>
+        
+        </li>  
+         
+        <li><a href="#" class="nav-link main-link">Research Papers <i class="fa-solid fa-caret-down"></i></a> 
+            <div class="dropMenu" id="dropMenuResearch">
+                <ul>
+                    <li><a class="nav-link" href="research-paper-1.html">Diseases</a></li>
+                    <li><a class="nav-link" href="research-paper-2.html">P-Value</a></li>
+                    <li><a class="nav-link" href="research-paper-3.html">Geography</a></li>
+                </ul>
+            </div>
+        </li> 
+    </ul>
+    </nav>
+    </header>
   <h1>Plots</h1>
   <section>  Dimension Reduction: Create new variables as functions of existing ones. They must be linear combinations of the original variables. This cuts down the total number of variables. These new variables are called directions. The variation of these variables should be maximal.
     PCA 
@@ -54,6 +64,9 @@
     Graph the data of of each individual with their snps onto a graph. Then average the data the on the axis then make the average the origin of the graph. This centers the data on the origin. All the clusters are still in the same position. Then a line is draw that best fits the data and essentially acts as a line of best fit. This line is determined by sum of squares method. This line is called Principal component 1 or PC1. Each Principal component is a linear combination of the variables.
     PC2 is a line orthogonal to PC1</section>
   <p></p>
+  <section><h2>Quarter Quantile Plots</h2></section>
+  <section><h2>Manhatten Plots</h2></section>
+  <section><h2>Principal Component Analysis</h2></section>
 </body>
 <footer>
   <div class="contact-section" id="author-contact-information">

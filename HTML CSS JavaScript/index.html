@@ -5,35 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 <body>
     <header>
         <nav class="navbar">
-        <h1 class="logo">SJ</h1>
+        <h1 class="logo">L%</h1>
         <ul>
             <li><a href="index.html" class="nav-link">Home</a></li>
-            <li><a href="#" class="nav-link">Background Knowledge</a>
+            <li><a href="#" class="nav-link">Background Knowledge <i class="fa-solid fa-caret-down"></i></a>
                 <div class="dropMenu" id="dropMenuBK">
                     <ul>
                         <li><a class="nav-link" href="genetics.html">Genetics</a></li>
-                        <li><a class="nav-link" href="statistics.html">Statistics</a></li>
-                        <div class="dropMenu">
+                        <li><a class="nav-link" href="#">Statistics <i class="fa-solid fa-caret-right"></i></a>
+                        <div class="dropMenu-1">
                             <ul>
-                                <li>Concepts</li>
-                                <li>Plots</li>
+                                <li><a class="nav-link" href="concepts.html">Concepts</a></li>
+                                <li ><a class="nav-link" href="plots.html">Plots</a></li>
                             </ul>
                         </div>
+                        </li>
                     </ul>
                 </div>
-                    <divc>
-
-                    </div>
-            </li>    
-            <li><a href="#" class="nav-link main-link">Research Papers</a> 
-                <div class="dropMenu" id="dropMenuResearch"><i class="fa fa-carat-down fa_custom"></i>
+            
+            </li>  
+             
+            <li><a href="#" class="nav-link main-link">Research Papers <i class="fa-solid fa-caret-down"></i></a> 
+                <div class="dropMenu" id="dropMenuResearch">
                     <ul>
                         <li><a class="nav-link" href="research-paper-1.html">Diseases</a></li>
                         <li><a class="nav-link" href="research-paper-2.html">P-Value</a></li>
@@ -43,24 +46,34 @@
             </li> 
         </ul>
         </nav>
-   
-    <div class="intro-screen">
-        <h1>Statgen Journal</h1>
-    </div>
-    </header>
-        
+        </header>
+
+    <section>
+        <div class="intro-screen">
+        <h1>Life By Percentages</h1>
+        <h6>Genetics Through Statistical Analysis<h6> 
+        </div>
+    </section>
     
-    <h2>Our Mission</h2>
-    <p> SGJ seeks to explain the field of Genetic Statistics through exploring key research papers in the field.
+    <section>
+        <h2>Our Mission</h2>
+        <p> L% seeks to explain the field of Genetic Statistics through exploring key research papers in the field.
         We will explain core concepts within the fields of Genetics and Statistics. This knowledge is crucial in 
         in explaining the complex concepts in Statistic Genetics.  </p>
+    </section>   
+    
+    
+    <section>
+        <h2>What is Genetic Statistics?</h2>
+        </p>Genetic Statistics explores the relationship between ancestry and certain genetic traits.Statistic Genetics studies genetics with statistical
+            methods and tools. Some software used are Rstudio and Python. They use libraries such as PLINK to generate amazing 
+            graphics. The most commone tool is Genome-wide association studies(GWAS) which is
+            the study of genetic variants in individuals to see if that variant is associated 
+            with a trait.</p>    
+    </section>
     
 
-    <h2>What is Genetic Statistics?</h2>
-    </p>Genetic Statistics explores the relationship between ancestry and certain genetic traits.Statistic Genetics studies genetics with statistical
-        methods and tools. Some software used are Rstudio and Python. They use libraries such as PLINK to generate amazing 
-        graphics.</p>
-
+        
     <footer>
         <div class="contact-section" id="author-contact-information">
         <label > Author Contact Information</label>
@@ -69,6 +82,7 @@
             <a href="https://www.linkedin.com/in/andrew-nguyen-6b72b0216/"><i class="fab fa-linkedin-in"></i></a>
             <a href="https://www.facebook.com/profile.php?id=100079858971896"><i class="fab fa-facebook"></i></a>
             <a href="https://www.instagram.com/andrew.d.ng/"><i class="fab fa-instagram"></i></a>
+            
         </div>
         </div>
     </footer>
