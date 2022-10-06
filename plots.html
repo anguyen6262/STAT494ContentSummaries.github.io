@@ -80,4 +80,76 @@
   </div>
 </footer>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <title>Document</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">SJ</h1>
+      <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="#" class="nav-link">Background Knowledge</a>
+              <div class="dropMenu" id="dropMenuBK">
+                  <ul>
+                      <li><a class="nav-link" href="genetics.html">Genetics</a></li>
+                      <li><a class="nav-link" href="statistics.html">Statistics</a></li>
+                  </ul>
+              </div>
+          </li>    
+          <li><a href="#" class="nav-link main-link">Research Papers</a> 
+              <div class="dropMenu" id="dropMenuResearch">
+                  <ul>
+                      <li><a class="nav-link" href="research-paper-1.html">Research#1</a></li>
+                      <li><a class="nav-link" href="research-paper-2.html">Research#2</a></li>
+                      <li><a class="nav-link" href="research-paper-3.html">Research#3</a></li>
+                  </ul>
+              </div>
+          </li> 
+      </ul>
+      </nav>
+  </header>
+  <h1>Plots</h1>
+  <section>  Dimension Reduction: Create new variables as functions of existing ones. They must be linear combinations of the original variables. This cuts down the total number of variables. These new variables are called directions. The variation of these variables should be maximal.
+    PCA 
+    finds the directions of maximal variation.
+    Changes coordinate system.
+    Principal Component 1 (PC1):  direction in which measurements vary the most. Points toward (1,1). Is linear combination presented by East = 1right + 1front. East is a new variable that is a linear combination of right and front.
+    Principal Component 2 (PC2): directions that are orthogonal. Points toward (-1,1). Is a linear combination represented by North = -1right +1Front 
+    Loading: coefficients in linear combinations.
+    PC Scores: # of PC in each case.
+    Num of PC’s is min(n,p) where n is the case and p is the variable.
+    The total amount of variation in the data is the sum of variance of each variable.
+    Variance:
+    Scree plot: Plots the proportion of variance for each PCA. It is usually paired with an accumulative version of that plot.
+    Score plot: Plots the scores of 2 pcs against each other for all cases.
+    Graph the data of of each individual with their snps onto a graph. Then average the data the on the axis then make the average the origin of the graph. This centers the data on the origin. All the clusters are still in the same position. Then a line is draw that best fits the data and essentially acts as a line of best fit. This line is determined by sum of squares method. This line is called Principal component 1 or PC1. Each Principal component is a linear combination of the variables.
+    PC2 is a line orthogonal to PC1</section>
+  <p></p>
+  <section><h2>Quarter Quantile Plots</h2></section>
+  <section><h2>Manhatten Plots</h2></section>
+  <section><h2>Principal Component Analysis</h2></section>
+</body>
+<footer>
+  <div class="contact-section" id="author-contact-information">
+  <label > Author Contact Information</label>
+     <div class="social-icons">
+      <a href="https://github.com/anguyen6262"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/andrew-nguyen-6b72b0216/"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=100079858971896"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/andrew.d.ng/"><i class="fab fa-instagram"></i></a>
+  </div>
+  </div>
+</footer>
+
 </html>
