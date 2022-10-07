@@ -38,7 +38,7 @@ h2 {
 }
 sub {
     vertical-align: baseline;
-    position: relative;
+    /* position: relative; */
     top: 0.4em;
 }
 
@@ -201,4 +201,10 @@ img {
     text-align: center;
 }
 
+section ul li {
+    padding-bottom: 0.2rem;
+}
+h2 ul li {
+    text-decoration: dotted;
+}
 

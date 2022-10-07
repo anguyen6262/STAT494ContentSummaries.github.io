@@ -39,7 +39,7 @@
                 <div class="dropMenu" id="dropMenuResearch">
                     <ul>
                         <li><a class="nav-link" href="research-paper-1.html">Diseases</a></li>
-                        <li><a class="nav-link" href="research-paper-2.html">P-Value</a></li>
+                        <!-- <li><a class="nav-link" href="research-paper-2.html">P-Value</a></li> -->
                         <li><a class="nav-link" href="research-paper-3.html">Geography</a></li>
                     </ul>
                 </div>
@@ -49,92 +49,72 @@
         </header>
     <section>
         <h1>Genome-wide association study of 14,000 cases of seven common diseases and 3,000 shared controls</h1>
-        <h2>Key Definitions</h2>
+        <h2>Purpose</h2>
+        <section>
+            <p>The main purpose of this paper is to determine the genetic basis of seven different
+                diseases. Genetic basis is how much variance in an individual’s DNA puts them at 
+                risk for contracting a disease. Understanding the genetic basis for a disease can 
+                potentially lead to new treatments of that disease. Brief descriptions of the 
+                diseases are listed below.</p>
+            <pre></pre>
+
+            <ul>
+                <li>Bipolar disorder : Episodes of extreme changes in mood, energy level, motivation, and interests.</li>
+                <li>Coronary artery disease : Damage or disease in the heart's blood vessels which can lead to heart attacks or chest pain.</li>
+                <li>Crohn’s disease : Bowel disease that causes abdominal pain, diarrhea, and weight loss.</li>
+                <li>Hypertension : Also known as high blood pressure. This can lead to heart disease or strokes.</li>
+                <li>Rheumatoid arthritis : Body’s immune system attacks its own tissues. Symptoms include swelling or inflammation of joints.</li>
+                <li>Type 1 Diabetes: diagnosed in childhood. Symptoms include thirst, hunger, and fatigue because the body doesn’t produce enough insulin.</li>
+                <li>Type 2 Diabetes: diagnosed in adult years. Symptoms include thirst, hunger, and fatigue because the body doesn’t produce enough insulin.</li>
+            </ul>
+        </section>
+        <h2>Definitions</h2>
         <ul>
-            <li>Genetic basis: the extent of variance in an individual at risk for contracting a common disease based on heredity.
-                Morbidity: suffering from a medical condition.
-                Genotyping: process of determining DNA sequence. This process helps scientists see genetic variations.
-                Aetiologies: cause of disease.
-                Allelic architecture:# of distinct alleles that affect the likelihood of contracting a disease at a disease locus(location of a specific gene) and their frequencies.
-                Phenotyping: process of determining, analyzing, and predicting phenotypes.
-                Allele frequency: Calculated by dividing the # of times the allele of interest is observed by the total number of alleles at that locus.
-                Linkage: Closeness of genes or other DNA sequences to one another on the same chromosome.
-                Linkage Disequilibrium: non-random association of alleles at different loci in a given population.
-                Covariates: independent variables that can affect outcome of trial.
-                Single Nucleotide Polymorphisms(SNP): genomic variant at a single base position in DNA.
-                Pathological: caused or altered by disease.
-                
-               
-                </li>
+            <li>Aetiologies: cause of disease.</li>
+            <li>Allelic architecture:# of distinct alleles that affect the likelihood of contracting a disease at a disease locus(location of a specific gene) and their frequencies.</li>
+            <li>Allele frequency: Calculated by dividing the # of times the allele of interest is observed by the total number of alleles at that locus.</li>
+            <li>Linkage: Closeness of genes or other DNA sequences to one another on the same chromosome.</li>
+            <li>Linkage Disequilibrium: non-random association of alleles at different loci in a given population.</li>
+            <li>Covariates: independent variables that can affect outcome of trial.</li>
         </ul>
     </section>
     <section>
         <h2>Methods</h2>
+        <p>The procedure for their experiment is closely similar to a GWAS procedure. 
+            To summarize, the researchers gathered participants that are of
+             European descent. They chose only one type of race because they wanted less sampling variation. 
+             This is a standard practice, but it is controversial because the results can’t be 
+             applied to people that are non-European. Then the researchers genotyped the 
+             participants and collected the phenotype data. The phenotypes in this study 
+             are the diseases. Then they conducted their hypothesis tests and created a Manhattan 
+             plot and Quarter Quantile Plot.</p>
     </section>
     <section>
-        <h2>Conclusions</h2>
+        <h2>Results</h2>
+        <img src ="images\JC1QQ.jpg">
+        <p>
+            The snps above the y=x line in this QQ plot have an association with the respective
+            diseases. It seems that the none of snps in the sample size have an association with
+            hypertension or bipolar disorder.
+        </p>
+        <img src="images\JC1ManhattenPlot.png" alt="">
+        <p>
+            The snps colored green in this Manhatten plot are the snps with an association with
+            that disease. This graph also shows the researchers which chromosomes are likely to
+            cause the individual to develop that disease. This information could potentially
+            lead to new treatments.
+        </p>
     </section>
-    <div>
-
-        <div class="definitions">
-            <label>Definitions/Formulas</label>
-            <ul>
-                <li>Single Nucleotide Polymorphisms(SNP): genomic variant at a single base position in DNA.</li>
-                <li>Aetiologies: cause of disease.</li>
-                <li>Genetic basis: the extent of variance in an individual at risk for contracting a common disease based on heredity.</li>
-                <li>Allelic architecture:# of distinct alleles that affect the likelihood of contracting a disease at a disease locus(location of a specific gene) and their frequencies.                </li>
-                <li></li>
-            </ul> 
-        </div> 
-    </div>
     <section>
-        <div class="text">
-                <p> 
-                    The following study was written in 2007 and is still referenced today in the field of genetic Statistics. 
-                    They sampled Caucuasian people in Europe. The reasoning for this sample is because it is easier to test 
-                    people that are genetically similar. This can be controversial because the data and results can't be accuratly
-                    applied to people with different ethnic backgrounds. The dataset is used for future studies because it is more cost effective to reuse datasets rather than 
-                    collect new samples. They focused on seven different diseases and tested whether or not they were associated
-                    with a SNPs. Descriptions of the seven diseases can be found below. <span><a href="">this</a></span>
-                </p>
-            </div>
-        <h2>Diseases Explored</h2>
-            <ul>
-                <li>Bipolar disorder : Episodes of extreme changes in mood, energy level, motivation, and interests.</li>
-                <li>Coronary artery disease : damage or disease in the heart's blood vessels which can lead to heart attacks or chest pain.</li>
-                <li>Crohn’s disease : Bowel disease that causes abdominal pain, diarrhea, and weight loss.
-                </li>
-                <li>Hypertension : High blood pressure. Can lead to heart disease or strokes.</li>
-                <li>Rheumatoid arthritis : Body’s immune system attacks its own tissues. Symptoms include swelling or inflammation of joints.</li>
-                <li>Type 1 Diabetes: diagnosed in childhood. Symptoms include thirst, hunger, and fatigue. The body doesn’t produce enough insulin.</li>
-                <li>Type 2 Diabetes: diagnosed in adult years. Symptoms include thirst, hunger, and fatigue. The body doesn’t produce enough insulin.</li>
-                Pellagra: A disease whose symptoms are dementia and diarrhea. Caused by a lack of vitamin B-3.
-                Tuberculosis: A bacterial disease that affects the lungs.
-                Leprosy: Infectious disease that affects skin, peripheral nerves, and eyes.
-                Mania: Extreme changes in mood or energy level.
-                Elation: Extreme happiness.
-                Familial aggregation: A cluster of similar disorders, traits, or behaviors in a family.
-                Encode: To specify genetic code for each nucleotide in the MRNA chain.
-                Schizophrenia: Serious mental disorder that has symptoms such as hallucinations and delusions.
-                Gamma-aminobutyric acid (GABA): neurotransmitter that slows down your brain by blocking signals in the central nervous system.
-                atheromatous plaques: hardening of arteries due to accumulation of plaque.
-                angina pectoris: severe chest pain that can lead to neck and shoulder. Caused by inadequate blood supply to the heart. Is a symptom of CAD
-                myocardial infarction: Heart Attack. Severe heart pain from lack of blood flow.
-                Hypertension: High blood pressure.
-                Hypercholesterolaemia: Too much cholesterol in blood.
-                Isoform: similarly functioning proteins that do not have identical amino acid sequences.
-                Enzyme: Proteins that help speed up metabolism.
-                Autophagy: degradation of a cell which is the body's way of removing unnecessary or dysfunctional components of a cell.
-                misclassification bias: Participant is put into the wrong category which alters results.
-            </ul>
-
-
+        <h2>Limitations</h2>
+        <p>
+            The information from this study is not applicable to people that are non-European. 
+            </p>
     </section>
-    <section></section>
-    <section></section>
-    <img src ="images\JC1QQ.jpg">
-    <img src="images\JC1ManhattenPlot.png" alt="">
-    
+    <section>
+        <h2>References</h2>
+        <cite>“Genome-Wide Association Study of 14,000 Cases of Seven Common Diseases and 3,000 Shared Controls.” Nature News, Nature Publishing Group, https://www.nature.com/articles/nature05911.</cite>
+    </section>
 
     
     <footer>

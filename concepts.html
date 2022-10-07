@@ -39,7 +39,7 @@
                 <div class="dropMenu" id="dropMenuResearch">
                     <ul>
                         <li><a class="nav-link" href="research-paper-1.html">Diseases</a></li>
-                        <li><a class="nav-link" href="research-paper-2.html">P-Value</a></li>
+                        <!-- <li><a class="nav-link" href="research-paper-2.html">P-Value</a></li> -->
                         <li><a class="nav-link" href="research-paper-3.html">Geography</a></li>
                     </ul>
                 </div>
@@ -78,18 +78,17 @@
         <h2>P-Value</h2>
         <p>
             A p-value is the probability of producing an estimate farther from the hypothesized 
-            value assuming that the null hypothesis were true. P-values are an important tool 
+            value assuming that the null hypothesis is true. P-values are an important tool 
             because they take into account sampling variation. If we have a large test statistic 
-            then we have a low p-value and vice versa. The industry uses a significance level
-            (&#945;) of 0.05. If the p-value is less than the significance level we can reject the
-            null hypothesis.  
+            then we have a low p-value and vice versa.If the p-value is less than the significance level we can reject the
+            null hypothesis.   The industry uses a significance level (&#945;) of 0.05. 
         </p>
     </section>
     <section>
         <h2>Type Errors</h2>
         <p>Sometimes there are errors in our hypothesis tests. We can split these errors into 
             two categories, type 1 errors and type 2 errors. A type 1 error is rejecting the null
-             hypothesis when the null hypothesis is true. This can be thought more of as a false 
+             hypothesis when the null hypothesis is true. This can be thought of as a false 
              positive. A type 2 error is not rejecting the null hypothesis when the null hypothesis
               is false. This is a false negative. If we reduce the significance level, rejecting 
               the null hypothesis would be more difficult which would increase the chances of type
@@ -106,13 +105,11 @@
             <span class="center">FWER = 1 - (1-&#945;)^n</span>
             <pre></pre>
         <p>
-            &#945; refers to the significance level and n is the number of tests. Then we adjust for 
+            &#945; refers to the significance level and n is the number of tests. We can adjust for 
             multiple testing with Bonferroni correction. We calculate a new significance threshold by 
             dividing our FWER by the number of hypothesis tests. It's easy to use but can be overly 
-            convervative if tests are not independent. However Bonferroni correction will lead to an     
-        </p>
-            
-            excess of type 2 errors.
+            convervative if tests are not independent. Another disadvantage is that 
+            Bonferroni correction can lead to an excess of type 2 errors.
         </p>
     </section>
     <section>

@@ -39,7 +39,7 @@
             <div class="dropMenu" id="dropMenuResearch">
                 <ul>
                     <li><a class="nav-link" href="research-paper-1.html">Diseases</a></li>
-                    <li><a class="nav-link" href="research-paper-2.html">P-Value</a></li>
+                    <!-- <li><a class="nav-link" href="research-paper-2.html">P-Value</a></li> -->
                     <li><a class="nav-link" href="research-paper-3.html">Geography</a></li>
                 </ul>
             </div>
@@ -52,24 +52,48 @@
     <section>
     <h1>Plots</h1> 
     <h2>Principal Component Analysis</h2>
-    <img src="images\PCAfromSlides.png" alt="">
+    <img src="images\PCAfromSlides.png" alt="">  
     <p>
     PCA is a technique used to analyze the relationships between observations using dimension 
     reduction. Dimension reduction is creating new variables as functions of existing variables.
     These new variables are called directions. This essentially reduces the number of variables
-    in the dataset. PCA’s are used because they provide detailed genetics data on many variables.
+    in the dataset. PCA’s are used because they provide detailed genetics data on many variables
+    simultaneously.
     It also distinguishes clusters and populations which helps compare how related each 
-    observations are to each other.    
+    observation is to each other.    
     </p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/kxRBFugLQpw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </section>
+      
+</section>
   <p></p>
-  <section><h2>Quarter Quantile Plots</h2></section>
+  <!-- <section><h2>Quarter Quantile Plots</h2></section> -->
 
   <section><h2>Manhatten Plots</h2>
+    <p>The Manhattan plot is effective at displaying large quantities of data points. Considering
+        that there are approximately three billion nucleotides in a chromosome, Manhattan plots 
+        are an excellent choice to use for GWAS. When Manhattan plots are used for GWAS, normally 
+        Haplotypes represented by chromosomes are on the x axis. On the y-axis is the -log of the 
+        p-value. We use -log instead of log because -log makes the plot more comprehensible. 
+    </p>
+    <p>
+        To initially construct a Manhattan plot we get acess to a data set of snps with their p-values 
+        and locus. We generate a scatter plot with the -log(p-values) on the y-axis and 
+        location on the x-axis. We will get a plot that looks like one below. This plot only 
+        represents one chromosome.
+    </p>
+         <img src="images\LabScatterPlot.png" alt="">
+    <p>
+        Then we repeat the same process until we have a scatter plot for each chromosome. 
+        By combining all the scatter plots we form a Manhattan plot. The plot should now look 
+        something like the following: 
+    </p>
   <img src="images\Lab Manhatten Plot.jpg"/>
-  <p>This plot is most commonly used for GWAS. The graph below documents </p>
+  
   </section>
+
+  <!-- <section>
+    <h2>References</h2>
+  </section> -->
 </body>
 <footer>
   <div class="contact-section" id="author-contact-information">

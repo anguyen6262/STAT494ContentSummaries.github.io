@@ -39,7 +39,7 @@
                 <div class="dropMenu" id="dropMenuResearch">
                     <ul>
                         <li><a class="nav-link" href="research-paper-1.html">Diseases</a></li>
-                        <li><a class="nav-link" href="research-paper-2.html">P-Value</a></li>
+                        <!-- <li><a class="nav-link" href="research-paper-2.html">P-Value</a></li> -->
                         <li><a class="nav-link" href="research-paper-3.html">Geography</a></li>
                     </ul>
                 </div>
@@ -49,34 +49,71 @@
         </header>
     <section>
     <h1>Genes mirror geography within Europe</h1>
+    <h2>Purpose</h2>
+    <p>To see whether or not it was possible to determine an individual's geographic origin 
+        based on their genome.</p>
+    <section>
+        <h2>Methods</h2>
+    </section>
   <p>
-    If both grandparents originated from a single country, that country was used as the origin. If grandparents originated from different countries, then the individual was excluded. If info on grandparents was unavailable, then the individuals country of birth was used.
-Sample does not include smaller genetically isolated populations such as basque or Orcadians. Large groups such as Swiss where split into categories such as Swiss-French, Swiss-German, Swiss-Italian. They were divided into these categories based on their primary language rather than their location.
+    The researcher’s sample consisted of approximately 6,000 individuals and was collected from 
+    two collections. If a test subject was non-European they were not considered in the study. 
+    Each individual’s geographic origin was classified by their grandparent’s originating country.
+      If grandparents originated from different countries,  the individual was excluded. Otherwise
+       that country was used as the origin. If information on the grandparents was unavailable,  
+       the individual's country of birth was used. Other key notes about the sample is that the 
+       sample does not include smaller genetically isolated populations such as Basque or Orcadians.
+        Large groups such as Swiss were split into categories such as Swiss-French, Swiss-German, 
+        Swiss-Italian. They were divided into these categories based on their primary language 
+        rather than their location. At the end of this quality control there were approximately
+         1,400 individuals left in the sample. Afterwards the researchers conducted a PCA, spatial 
+         assignments, and GWAS simulations.
+
 </p>    
     </section>
     <section>
+        <h2>Results</h2>
+        
         <p>
-            The graph on this slide is a stacked bar plot that describes the accuracy of correctly
-            determining a person's country of origin. The distance is from the central point from 
+            The plot below is a stacked bar plot that describes the accuracy of correctly
+            determining a person's country of origin. The distance starts from the central point of 
             each geographical feature. The central points are determined by a linear model 
             predicted by the PC1 and PC2 scores. The only geographical features that didn’t use 
             this model are the Russian Federation, Norway, and Sweden. The capitals were used 
-            instead.The column on the side displays the average of the proportions across the 
+            instead.The column on the left side displays the average of the proportions across the 
             populations at which each population has equal weight. According to this graph the 
             model was least accurate in predicting people from Sweden and Romania. The accuracy 
-            could have potentially been affected because of outliers which are likely due to small
-            sample sizes, but could also be because classifying individuals by the ancestry of 
-            their grandparents might be misleading. Parental origins, language, or birth country 
-            may be better ways to classify individuals. For example some individuals may have 
+            could have potentially been affected by outliers which are likely due to small
+            sample sizes, but could also be from classifying individuals by 
+            their grandparent's originating country. This classification can be misleading. Perhaps parental origins, 
+            language, or birth country can be better ways to classify individuals. For example some individuals may have 
             grandparents from Italy, but the individual was born in France, speaks French, and is 
-            surrounded by French people
+            surrounded by French people.
+        </p>
+        <img src="images\JC3Accuracy.png" alt="">
+        <p>
+            Looking at this PCA we can see that a person that identified oneself as Russian was
+            plotted in Italy. This error could have possibly been caused by the individual misspecifying their ancestor’s origins or perhaps the individual was a recent migrant. Another possibility is that the sample size was too small. For example this study only had one person identified as Slovakian.
+
+        </p>
+        <img src="images\JC3PCA.jpg">
+    </section>
+    <section>
+        <h2>Limitations</h2>
+        <p>This research is ineffective for people that are mixed or non-European. Also NP 
+            genotyping platforms under-represent variation at low-frequency alleles which causes 
+            loss of information about the population structure. Also the researcher’s spread 
+            their supplementary information across multiple papers which makes it more difficult 
+            for readers to understand their analysis.
         </p>
     </section>
+    <section>
+        <h2>References</h2>
+        <cite>Novembre, John, et al. “Genes Mirror Geography within Europe.” Nature News, Nature Publishing Group, https://www.nature.com/articles/nature07566.</cite>
+    </section>
 
-<section>Methods</section>
-<section>Conclusions</section>
-<img src="images\JC3PCA.jpg">
-<img src="images\JC3Accuracy.png" alt="">
+
+
 </body>
 <footer>
   <div class="contact-section" id="author-contact-information">
