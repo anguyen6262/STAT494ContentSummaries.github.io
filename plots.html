@@ -47,28 +47,29 @@
     </ul>
     </nav>
   </header>
-  <section>  
+
+    
+    <section>
     <h1>Plots</h1> 
-    Dimension Reduction: Create new variables as functions of existing ones. They must be linear combinations of the original variables. This cuts down the total number of variables. These new variables are called directions. The variation of these variables should be maximal.
-    PCA 
-    finds the directions of maximal variation.
-    Changes coordinate system.
-    Principal Component 1 (PC1):  direction in which measurements vary the most. Points toward (1,1). Is linear combination presented by East = 1right + 1front. East is a new variable that is a linear combination of right and front.
-    Principal Component 2 (PC2): directions that are orthogonal. Points toward (-1,1). Is a linear combination represented by North = -1right +1Front 
-    Loading: coefficients in linear combinations.
-    PC Scores: # of PC in each case.
-    Num of PC’s is min(n,p) where n is the case and p is the variable.
-    The total amount of variation in the data is the sum of variance of each variable.
-    Variance:
-    Scree plot: Plots the proportion of variance for each PCA. It is usually paired with an accumulative version of that plot.
-    Score plot: Plots the scores of 2 pcs against each other for all cases.
-    Graph the data of of each individual with their snps onto a graph. Then average the data the on the axis then make the average the origin of the graph. This centers the data on the origin. All the clusters are still in the same position. Then a line is draw that best fits the data and essentially acts as a line of best fit. This line is determined by sum of squares method. This line is called Principal component 1 or PC1. Each Principal component is a linear combination of the variables.
-    PC2 is a line orthogonal to PC1</section>
+    <h2>Principal Component Analysis</h2>
+    <img src="images\PCAfromSlides.png" alt="">
+    <p>
+    PCA is a technique used to analyze the relationships between observations using dimension 
+    reduction. Dimension reduction is creating new variables as functions of existing variables.
+    These new variables are called directions. This essentially reduces the number of variables
+    in the dataset. PCA’s are used because they provide detailed genetics data on many variables.
+    It also distinguishes clusters and populations which helps compare how related each 
+    observations are to each other.    
+    </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/kxRBFugLQpw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
   <p></p>
   <section><h2>Quarter Quantile Plots</h2></section>
-  <section><h2>Manhatten Plots</h2></section>
+
+  <section><h2>Manhatten Plots</h2>
   <img src="images\Lab Manhatten Plot.jpg"/>
-  <section><h2>Principal Component Analysis</h2></section>
+  <p>This plot is most commonly used for GWAS. The graph below documents </p>
+  </section>
 </body>
 <footer>
   <div class="contact-section" id="author-contact-information">

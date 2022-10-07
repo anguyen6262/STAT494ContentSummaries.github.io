@@ -47,34 +47,88 @@
         </ul>
         </nav>
         </header>
-    <h2 id="statistics-background-knowledge">Statistic Background Knowledge</h2>
+    
     
     <section>
+        <h1>Concepts</h1>
         <h2>Hypothesis Tests</h2> 
         <p>
-        Hypothesis tests are a tool for statistical inference. Statistical inference is 
-        judging a population's statistical relationship while taking into account
-        uncertainty and sampling variability. uncertainty refers to
-     </p>
+            Hypothesis tests are a tool for statistical inference. Statistical inference is 
+            judging a population's statistical relationship while taking into account uncertainty
+             and sampling variability. Hypothesis tests are used to see if there is a relationship
+              between two variables. How hypothesis testing is conducted is by creating a null 
+              hypothesis and alternative hypothesis. The null hypothesis states that there is no 
+              relationship between the variables and is often denoted as H<sub>0</sub>. On the 
+              other hand the alternative hypothesis states that there is a relationship between 
+              the variables and is denoted H<sub>A</sub>. Then we compute test statistics. The 
+              formula for a test statistic is the following: 
+        </p>
+            <pre></pre>
+            <span class="center">Test statistic = (estimate - null value) / standard error of estimate </span> 
+            <pre></pre>
+        <p>
+            Test statistics essentially tells us how far our estimates are from the null value. 
+            Meaning that the larger the test statistic the more likely we are to reject the null 
+            hypothesis. Rejecting the null hypothesis means that we are more inclined to believe 
+            that there is an association between the variables. How large should test statistics 
+            be for us to reject the null hypothesis? That’s when we use a tool called p-values.   
+        </p>
     </section>
     <section>
         <h2>P-Value</h2>
         <p>
-            When our 
+            A p-value is the probability of producing an estimate farther from the hypothesized 
+            value assuming that the null hypothesis were true. P-values are an important tool 
+            because they take into account sampling variation. If we have a large test statistic 
+            then we have a low p-value and vice versa. The industry uses a significance level
+            (&#945;) of 0.05. If the p-value is less than the significance level we can reject the
+            null hypothesis.  
         </p>
     </section>
     <section>
         <h2>Type Errors</h2>
-        <p><h3>Type 1 Error</h3>
-            
+        <p>Sometimes there are errors in our hypothesis tests. We can split these errors into 
+            two categories, type 1 errors and type 2 errors. A type 1 error is rejecting the null
+             hypothesis when the null hypothesis is true. This can be thought more of as a false 
+             positive. A type 2 error is not rejecting the null hypothesis when the null hypothesis
+              is false. This is a false negative. If we reduce the significance level, rejecting 
+              the null hypothesis would be more difficult which would increase the chances of type
+               1 errors and decrease the chance of type 2 errors.
         </p>
-        <p><h3>Type 2 Error</h3></p>
     </section>
     <section>
         <h2>Family-Wise Error Rate (FWAS)</h2>
-        <p></p>
+        <p>
+            FWER is the probability of getting at least one type 1 error. The formula to calculate 
+            the FWER is the following:
+        </p>
+            <pre></pre>
+            <span class="center">FWER = 1 - (1-&#945;)^n</span>
+            <pre></pre>
+        <p>
+            &#945; refers to the significance level and n is the number of tests. Then we adjust for 
+            multiple testing with Bonferroni correction. We calculate a new significance threshold by 
+            dividing our FWER by the number of hypothesis tests. It's easy to use but can be overly 
+            convervative if tests are not independent. However Bonferroni correction will lead to an     
+        </p>
+            
+            excess of type 2 errors.
+        </p>
     </section>
-
+    <section>
+        <h2>References</h2>
+        <blockquote>
+            <cite>Macalester Statistics Faculty (Heggeseth, Myint. “Stat 155 Notes.” Brianna C. Heggeseth, https://bcheggeseth.github.io/Stat155Notes/. 
+            </cite>
+            <cite>“S.3 Hypothesis Testing: Stat Online.” PennState: Statistics Online Courses, https://online.stat.psu.edu/statprogram/reviews/statistical-concepts/hypothesis-testing. 
+            </cite>
+            <cite>Zach. “What Is the Family-Wise Error Rate?” Statology, 16 Feb. 2021, https://www.statology.org/family-wise-error-rate/. 
+            </cite>
+            <cite>[McLeod, SA]. “[What a P-Value Tells You about Statistical Significance].” P, 1 Jan. 1970, https://www.simplypsychology.org/p-value.html. 
+            </cite>
+        </blockquote>
+        
+    </section>
     <footer>
         <div class="contact-section" id="author-contact-information">
         <label > Author Contact Information</label>

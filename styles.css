@@ -22,6 +22,35 @@ body {
     padding-top: 3.3rem;
 }
 
+p {
+    text-indent: 1cm;
+}
+h1 {
+    font-size: 2rem;
+}
+pre {
+    padding:0.4rem 0;
+}
+h2 {
+    background:var(--base-color1);
+    color:white;
+    margin-bottom: 0.3rem;
+}
+sub {
+    vertical-align: baseline;
+    position: relative;
+    top: 0.4em;
+}
+
+section {
+    padding-top:0.2rem;
+}
+
+iframe {
+    display: block;
+    margin: 1rem auto;
+}
+
 .logo {
     background-image:var(--base-gradient);
     background-size: 100%;
@@ -78,11 +107,11 @@ body {
 }
 
 #dropMenuBK {
-    width: 225px;
+    width: 240px;
 }
 
 #dropMenuResearch {
-    width: 160px;
+    width: 175px;
 }
 
 .navbar ul li:hover .dropMenu {
@@ -106,9 +135,12 @@ body {
     height: 100vh;
     text-align: center;
     padding-top: 20%;
-    font-size:1.5rem;
+    font-size:2rem;
 }
 
+.intro-screen h1 {
+    font-size: 3rem;
+}
 
 
 .contact-section{
@@ -118,23 +150,16 @@ body {
     font-size:1.5rem;
 }
 
-h1 {
-    font-size: 2rem;
-}
-h2 {
-    background:var(--base-color1);
-    color:white;
-}
-
-i:hover {
-    color: aqua;
-    transition: 0.5s ease;
-}
 
 .social-icons a i {
     padding:0.5rem 1.4rem;
+    color:#932b6f 
 }
 
+.social-icons a i:hover {
+    color: aqua;
+    transition: 0.5s ease;
+}
 img {
     display:block;
     width: 30%;
@@ -150,9 +175,12 @@ img {
     color: navy;
 }
 
+#under-intro{
+    padding-top: 0;
+
+}
 .fa {
     color: white;
-    /* display: block; */
 }
 
 .dropMenu-1 {
@@ -163,6 +191,14 @@ img {
     display: block;
     position: absolute;
     top:0;
-    left:14rem;
+    left:15rem;
     background: var(--base-color1);
 }
+
+.center {
+    display: block;
+    padding: 0 auto;
+    text-align: center;
+}
+
+
