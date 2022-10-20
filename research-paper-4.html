@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+        <div class="logo">L%</div>
+        <ul>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="#0" class="nav-link">Background Knowledge <i class="fa-solid fa-caret-down"></i></a>
+                <div class="dropMenu" id="dropMenuBK">
+                    <ul>
+                        <li><a class="nav-link" href="genetics.html">Genetics</a></li>
+                        <li><a class="nav-link" href="#0">Statistics <i class="fa-solid fa-caret-right"></i></a>
+                        <div class="dropMenu-1">
+                            <ul>
+                                <li><a class="nav-link" href="concepts.html">Concepts</a></li>
+                                <li ><a class="nav-link" href="plots.html">Plots</a></li>
+                            </ul>
+                        </div>
+                        </li>
+                    </ul>
+                </div>
+            
+            </li>  
+             
+            <li><a href="#0" class="nav-link main-link">Research Papers <i class="fa-solid fa-caret-down"></i></a> 
+                <div class="dropMenu" id="dropMenuResearch">
+                    <ul>
+                        <li><a class="nav-link" href="research-paper-1.html">Diseases</a></li>
+                        <!-- <li><a class="nav-link" href="research-paper-2.html">P-Value</a></li> -->
+                        <li><a class="nav-link" href="research-paper-3.html">Geography</a></li>
+                    </ul>
+                </div>
+            </li> 
+        </ul>
+        </nav>
+        </header>
+        <section>
+            <h1>The Genetic Ancestry of African Americans,
+                Latinos, and European Americans Across the
+                United States</h1>
+            <section>
+            <h2>Purpose</h2>
+            <p>
+                The authors seek to research how population admixture affects the relationship between 
+                self-reported ancestry and genetic ancestry in different regions. Population admixture refers 
+                to when people from different continents or isolated populations interbreed. This research can
+                 potentially lead to new treatments and inform medical sciences about conditions found in 
+                 certain haplogroups. This may also further research for historians and sociologists. 
+            </p>
+        </section>
+        
+        <section>
+            <h2>Methods</h2>
+            <p>For their ancestry analysis the sampled group consists of 5,269 self-reported African Americans, 
+                8,663 Latinos, and 148,789 European Americans, who are 23andMe customers. Their geographic analysis
+                 sampled group consisted of 1,970 African Americans, 2,944 Latinos, and 45,783 European Americans.
+                 This sample is representative of the U.S. because of its reflectiveness of the U.S. 2010 census.
+                The customers supplied saliva samples and consented to have their genetic data be used in research.
+                 The participants also answered an ancestry survey and an ethnicity survey relating to ethnic 
+                 background, current zip code of residency, state of birth, and ancestry. The questions on the 
+                 surveys are similar to the questions below:
+                
+                <label> Ethnicity Survey </label>
+                
+                <ol>
+                    <li> Are you Hispanic?
+                        <ul> 		
+                <li>Yes, I’m Hispanic.
+                        <li>No, I’m not Hispanic.
+                        </ul>
+                    </li>Which of these ?US Census categories describe your racial identity? Please 
+                check all that apply from the following list of ethnicities:
+                        <ul>
+                        <li>White</li>
+                        <li>Black</li>
+                        <li>American Indian</li>
+                        <li>Asian</li>
+                        <li>Native Hawaiian</li>
+                        <li>Not sure</li>
+                        <li>Other</li>
+                        <li>Other racial identity</li>
+                        </ul>
+                    </li>
+                </ol>
+                
+                To be included in the following cohorts the answers for the ethnicity survey must be and must 
+                not have selected any other identity:
+                
+                African American: “No, I’m not Hispanic” and “Black” 
+                European American: “No, I’m not Hispanic” and “White” 
+                Latino: “Yes, I’m HIspanic” 
+                
+                <label>Ancestry Survey</label>
+                <ul> What best describes your ancestry/ethnicity? 
+                    <li>African</li>
+                    <li>African American</li>
+                <li>Central Asian</li>
+                <li>Declined</li>
+                <li>East Asian</li>
+                <li>European</li>
+                <li>Latino</li>
+                <li>Mideast</li>
+                <li>‘Multiple ancestries</li>
+                <li>Native American</li>
+                <li>Not sure</li>
+                <li>Other</li>
+                <li>Pacific Islander</li>
+                <li>South Asian</li>
+                <li>Southeast Asian</li>
+                </ul>
+                
+                Only one option can be chosen from this list and those that identified as one of the ethnicities of interest were included in their respective cohort. Participants who self-identified as multiple ethnicities were excluded because including mixed people could potentially cause more outliers in the data. This is acceptable because only a small number of people in the dataset self-identified as multiple ethnicities.
+                Self-reports can be unreliable because people consider their ancestry, race, identity, and 
+                ethnicity differently based on their traits, culture, and other factors. By checking the consistency 
+                between the answers in the two surveys the researchers can enforce the reliability of self-reported 
+                ethnicities. However it's important to note that the surveys were taken at different times. This can 
+                change the consistency because people may have changed how they perceive their self-identity over 
+                time.
+                </p>
+                <p>
+                    After genotyping the saliva samples of the participants, the researchers began ancestry 
+                    composition. They used support vector machines to assign ancestry labels to genomic regions. 
+                    Then estimated ancestry proportions and confidence scores at windows of the genome. If the 
+                    window’s threshold of 0.51 is surpassed it is included in genome-wide ancestry.
+                    For data analysis they estimate time frame of admixture events equation with the 
+                    following formula:
+
+                    % pop ancestry = <sup># of windows of pop ancestry</sup> &frac  total # of assigned windows
+
+                    <hide>&nbsp;</hide><h-frac><hf-num># of windows of pop ancestry</hf-num><hide>&frasl;</hide><hf-den><total # of assigned windows
+                    /hf-den></h-frac>
+
+                    To test how much the male and female contributed to ancestry they minimized the mean
+                     square error on the x chromosome. They assumed that the total contribution from each 
+                     sex was 50%. Then used grid-search optimization and predicted the x chromosome estimates.
+
+                    To validate their data analysis they checked their population size correlations. Meaning 
+                    that used 2010 US Census demographic data to fit linear regression models comparing state 
+                    population proportional to the mean estimated admixture proportion of people from that 
+                    state. to test the significance of a person’s inferred ancestry and self-reported incestry 
+                    they fit a logistic regression model to age, proportion ancestry, sex, age, intercept, and 
+                    interaction variables.
+
+                </p>
+        </section>
+        <section>
+            <h2>Results</h2>
+            <p><h4>African Americans (Please refer to figure 1 in the article)</h4>
+                The majority of African Americans with African ancestry are located in southern states ,primarily in South Carolina and Georgia. The mean proportion of 
+                African ancestry in African Americans is approximately 74.8%. However the relationship between
+                 African Americans and Native American ancestry is not as profound. It is estimated that only 
+                 22% of African Americans carry Native American ancestry. Oklahoma has the highest proportion 
+                 of African Americans carrying Native American ancestry in the U.S. which could be due to 
+                 Oklahoma being the place where these populations first interacted. This observation supports
+                  the theory that ancestry is reflective of historical migration events.</p>
+            <p><h4>Latinos (Please refer to figure 2 in the article)</h4>
+                According to the data, Latinos in the U.S. on average carry approximately 65.1% European 
+                ancestry, 18% Native American ancestry, and 6.2% African ancestry. Southwestern states have
+                 the highest estimated levels of self-reported Latinos who carry Native American ancestry. 
+                 Whereas, the highest mean levels of Latinos who carry African ancestry were living in or were 
+                 born in Southern states, particularly Louisiana.</p>
+            <p><h4>Europeans (please refer to figure 3 in the article)</h4>
+                Approximately 0.98% of Europeans carry African ancestry and 0.26% of Europeans carry Native 
+                American ancestry. Even though the majority of Europeans don’t carry non-european ancestry, 
+                the small percentage that do is still millions of individuals. The European Americans who carry
+                 Native American ancestry are primarily located west of the Mississippi River. On the other 
+                 hand, Europeans with African Ancestry were most likely located at cities with sea ports 
+                 relating to the trans-Atlantic slave trade. African American ancestry in European Americans 
+                 is strongly correlated with the proportion of population of African Americans in a state. 
+                 The higher the proportion the more African ancestry in European Americans.</p>
+        </section>
+        <section>
+            <h2>Limitations</h2>
+            <p>One limitation of this study is that the dataset does not provide enough information to make  
+                claims about Native American, nor West African ancestry. It’s important to note that this study
+                 is inapplicable to mixed race people and Asian people. Another limitation is that 23andMe kits
+                  are either $99 or $199 which could discourage low-income people from participating. Also the
+                   majority of African Americans surveyed were living or born in California or New York which 
+                   could be a result of population density. This is a limitation because African Americans have
+                    a lower mean African ancestry than African Americans living in the south. Sex bias can 
+                    potentially skew the results which is due to factors such as exploitation, or more 
+                    European men came to the Americas than European women. African Americans might have four 
+                    times as many female Native American ancestors as male and European Americans might have 
+                    ten times as many female Native American ancestors as male.</p>
+        </section>
+        <section>
+            <h2>References</h2>
+            <p>Bryc, Katarzyna, Eric Y. Durand, J. Michael Macpherson, David Reich, and Joanna L. Mountain. "The Genetic Ancestry of African
+                Americans, Latinos, and European Americans across the United States." The American Journal of Human Genetics 96.1 (2015): 37-53.
+                doi: 10.1016/j.ajhg.2014.11.010
+                </p>
+        </section>
+        </section>
+        
+       
+
+        <footer>
+            <div class="contact-section" id="author-contact-information">
+            <label > Author Contact Information</label>
+               <div class="social-icons">
+                <a href="https://github.com/anguyen6262"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/andrew-nguyen-6b72b0216/"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100079858971896"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/andrew.d.ng/"><i class="fab fa-instagram"></i></a>
+            </div>
+            </div>
+        </footer>
+    </body>
+    </html>
+
+
