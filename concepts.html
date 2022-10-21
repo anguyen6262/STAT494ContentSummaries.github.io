@@ -39,8 +39,8 @@
                 <div class="dropMenu" id="dropMenuResearch">
                     <ul>
                         <li><a class="nav-link" href="research-paper-1.html">Diseases</a></li>
-                        <!-- <li><a class="nav-link" href="research-paper-2.html">P-Value</a></li> -->
                         <li><a class="nav-link" href="research-paper-3.html">Geography</a></li>
+                        <li><a class="nav-link" href="research-paper-4.html">Ancestry</a></li>
                     </ul>
                 </div>
             </li> 
@@ -65,17 +65,19 @@
                   are people that drink, but don’t smoke. This could potentially decrease the average FEV for 
                   non-smokers. Including these in a linear or logistic regression model can yield more accurate
                    results, but is not mandatory to include all the confounders. There are many confounders
-                    and it is difficult to include all of them into a model. 
-            </p>
-            <!-- <figure> -->
-            <img src = images\counfounder.jpg/>
-                <!-- <figcaption>A representation of the relationship between confounders, response variables, 
-                    and explanatory variables with the following research question in mind: 
-                    “Does smoking affect forced expiratory volume (FEV) in children from ages 0 to 18 years 
-                    old”. Note that the arrow between response variable and explanatory variable is dotted 
+                    and it is difficult to include all of them into a model. The image below is a 
+                    representation of the relationship between confounders, response variables, 
+                    and explanatory variables applied to our research question. Note that the arrow between 
+                    response variable and explanatory variable is dotted 
                     because we are unsure yet if the response variable has a casual relationship with the 
-                    explanatory variable. </figcaption>
-            </figure> -->
+                    explanatory variable.
+                <img src = images\confounder.jpg>    
+
+                    
+
+            </p>
+            
+            
         </section>
 
         <section>
@@ -89,18 +91,24 @@
                  relationship between smoking and fev, a possible effect modifier in this situation would be 
                  age. Younger children are less likely to smoke, but they have a smaller FEV than older 
                  children because their lungs aren’t as developed. Without including age into our model we 
-                 could see a  misleading result that people who smoke have a higher FEV.
+                 could see a  misleading result that people who smoke have a higher FEV. The image below is a representation of 
+                 the relationship between effect modifier, response variables, and explanatory variables applied to our research question. 
+                Note that the arrow between response variable and explanatory variable is dotted to help show
+                that effect modifier amplifies the effects of the explanatory variable.
 
-            </p>
-            <figure>
                 <img src=images\interaction.jpg/>
-                <figcaption></figcaption></figure>
+            </p>
+         
+                
+                
         </section>
 
         <section>
             <h2>Linear Regression Model</h2>
             <p>
-                E[Y|X] = &beta_0 + &beta_1X
+                <pre></pre>
+                <span class="center">E[Y|X<sub>1</sub>,...,X<sub>k</sub> ] = &beta;<sub>0</sub> + &beta;<sub>1</sub>X + ... + &beta;<sub>k</sub>X<sub>k</sub></span> 
+                <pre></pre>
                 The purpose of a linear regression model is to predict the expected value of y conditional to 
                 x. y represents the response variable and x represents the explanatory variables. This model 
                 is a tool used to help research questions with quantitative outcomes. The models normally fit 
@@ -113,13 +121,10 @@
         <section>
             <h2>Logistic Regression Model</h2>
             <p>
-                E[Y|X] = &beta_0 + &beta_1X
-                The purpose of the logistic regression model is to answer a categorical question conditional. 
-                y represents the response variable and x represents the predictor variables. This model is 
-                similar to a linear regression model in that it can also turned into a multiple logistic 
-                regression model by adding in other explanatory variables. The main distinction between a 
-                linear regression model and logistic regression model is that logistic y and x variables are 
-                categorical variables. Another key difference is the interpretation of the coefficients in the
+                A logistic regression model is similar to a linear regression model in the regard that it can 
+                it has the same formula and can have multiple explanatory variables added to that model. The main distinction between a 
+                linear regression model and logistic regression model is that logistic regression models are 
+                used to answer questions with categorical outcomes and that y is a categorical variable. Another key difference is the interpretation of the coefficients in the
                  model, but we will not be discussing that because the interpretations are not thoroughly 
                  described in the research papers. 
             </p>
