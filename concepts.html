@@ -51,6 +51,79 @@
     
     <section>
         <h1>Concepts</h1>
+        <section>
+            <h2>Confounding Variables</h2>
+            <p>
+                A confounding variable (also known as a confounder) is a variable that is associated with the 
+                explanatory and response variable, but the explanatory variable must not be a cause of the 
+                confounder. Suppose our research question is “Does smoking often affect forced expiratory 
+                volume (FEV) in children from ages 0 to 18 years old”. Our explanatory variable would be 
+                smoking often and our response variable would be FEV. Possible confounders are weight, alcohol
+                 consumption, etc. Alcohol consumption is a confounder because alcohol can reduce FEV and 
+                 people that smoke can possibly be more open to drinking alcohol. However, smoking doesn’t 
+                 cause one to drink alcohol regularly. This confounder is important to consider because there
+                  are people that drink, but don’t smoke. This could potentially decrease the average FEV for 
+                  non-smokers. Including these in a linear or logistic regression model can yield more accurate
+                   results, but is not mandatory to include all the confounders. There are many confounders
+                    and it is difficult to include all of them into a model. 
+            </p>
+            <figure>
+                <img src=/>
+                <figcaption>A representation of the relationship between confounders, response variables, 
+                    and explanatory variables with the following research question in mind: 
+                    “Does smoking affect forced expiratory volume (FEV) in children from ages 0 to 18 years 
+                    old”. Note that the arrow between response variable and explanatory variable is dotted 
+                    because we are unsure yet if the response variable has a casual relationship with the 
+                    explanatory variable. </figcaption></figure>
+        </section>
+
+        <section>
+            <h2>Interaction Variables</h2>
+            <p>
+                An interaction variable (also known as an effect modifier) is a variable that in combination 
+                with an explanatory variable drastically changes the response variable. These should always be
+                 included in a model. Suppose our research question is “Does smoking often affect forced 
+                 expiratory volume (FEV) in children from ages 0 to 18 years old”. Our explanatory variable 
+                 would be smoking often and our response variable would be FEV.  If we were to measure the 
+                 relationship between smoking and fev, a possible effect modifier in this situation would be 
+                 age. Younger children are less likely to smoke, but they have a smaller FEV than older 
+                 children because their lungs aren’t as developed. Without including age into our model we 
+                 could see a  misleading result that people who smoke have a higher FEV.
+
+            </p>
+            <figure><img src=/><figcaption></figcaption></figure>
+        </section>
+
+        <section>
+            <h2>Linear Regression Model</h2>
+            <p>
+                E[Y|X] = &beta_0 + &beta_1X
+                The purpose of a linear regression model is to predict the expected value of y conditional to 
+                x. y represents the response variable and x represents the explanatory variables. This model 
+                is a tool used to help research questions with quantitative outcomes. The models normally fit 
+                with graphs with quantitative variables, but can incorporate categorical variables if it is a 
+                multiple linear regression model. A multiple linear regression model takes into account 
+                confounders, effect modifiers, and other explanatory variables in the model.  
+            </p>
+        </section>
+
+        <section>
+            <h2>Logistic Regression Model</h2>
+            <p>
+                E[Y|X] = &beta_0 + &beta_1X
+                The purpose of the logistic regression model is to answer a categorical question conditional. 
+                y represents the response variable and x represents the predictor variables. This model is 
+                similar to a linear regression model in that it can also turned into a multiple logistic 
+                regression model by adding in other explanatory variables. The main distinction between a 
+                linear regression model and logistic regression model is that logistic y and x variables are 
+                categorical variables. Another key difference is the interpretation of the coefficients in the
+                 model, but we will not be discussing that because the interpretations are not thoroughly 
+                 described in the research papers. 
+            </p>
+
+        </section>
+        
+        <section>
         <h2>Hypothesis Tests</h2> 
         <p>
             Hypothesis tests are a tool for statistical inference. Statistical inference is 
