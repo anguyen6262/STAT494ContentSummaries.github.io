@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+        <div class="logo">L%</div>
+        <ul>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="#0" class="nav-link">Background Knowledge <i class="fa-solid fa-caret-down"></i></a>
+                <div class="dropMenu" id="dropMenuBK">
+                    <ul>
+                        <li><a class="nav-link" href="genetics.html">Genetics</a></li>
+                        <li><a class="nav-link" href="#0">Statistics <i class="fa-solid fa-caret-right"></i></a>
+                        <div class="dropMenu-1">
+                            <ul>
+                                <li><a class="nav-link" href="concepts.html">Concepts</a></li>
+                                <li ><a class="nav-link" href="plots.html">Plots</a></li>
+                            </ul>
+                        </div>
+                        </li>
+                    </ul>
+                </div>
+            
+            </li>  
+             
+            <li><a href="#0" class="nav-link main-link">Research Papers <i class="fa-solid fa-caret-down"></i></a> 
+                <div class="dropMenu" id="dropMenuResearch">
+                    <ul>
+                        <li><a class="nav-link" href="research-paper-1.html">Diseases</a></li>
+                        <li><a class="nav-link" href="research-paper-2.html">Stratification</a></li>
+                        <li><a class="nav-link" href="research-paper-3.html">Geography</a></li>
+                        <li><a class="nav-link" href="research-paper-4.html">Ancestry</a></li>
+                    </ul>
+                </div>
+            </li> 
+        </ul>
+        </nav>
+        </header>
+
+        <section>
+            <h1>New approaches to population stratification in genome-wide association studies</h1>
+            <h2>Purpose</h2>
+            <p>To review the advantages and disadvantages of methods for correcting stratification and determine the optimal method under certain conditions.
+            </p>
+            <section>
+                <h2>Methods</h2>
+                <ul>
+                    <li>
+                        Structured Association: Can accurately correct stratification in datasets whos 
+                        population structure is the only type of sample structure. The data is grouped in 
+                        different subpopulations.  Then the association statistics are computed. These steps are 
+                        taken in software. Due to the large size of genome wide datasets these studies have high 
+                        computational costs. However there is always new development of software to reduce these 
+                        costs which would make structured association an excellent option for inferring population
+                        structure and computing association statistics.fail to account for family structure or
+                        cryptic relatedness
+                    </li>
+                    <li>
+                        PCA primarily shows the effects of differential bias. It removes the confounding effect 
+                        of when genotype isn’t associated with phenotype, but genotype and phenotype are both 
+                        associated with ancestry. PCA creates a greater correction to data that have greater 
+                        differences in allele frequencies. This makes sense because PC1 is created based on the 
+                        greatest variance of the data points. Limitations include not modeling cryptic relatedness
+                         and family structure. This can be improved by dividing by lambdaGC, but the test 
+                         statistics that account specifically for family structure will still not be accurate. 
+                         This also wouldn’t work if family structure is in the sample could potentially produce 
+                         spurious principal components. This is due to the lack of variance in genetic ancestry. 
+                         A solution to this problem is to use SNP loadings from a different sample in the same
+                          study that does have family structure. This is only possible if the size of the dataset
+                           is large enough. fail to account for family structure or cryptic relatedness. Another 
+                           limitation is that it only accounts for fixed effects and doesn’t take into account the
+                            relatedness of individuals. Variance can be because people are from different 
+                            population structures(different genotypes, same family). People are still developing PCA to work for more studies.  Currently the main solutions is deleting or not including some data. 
+                    </li>
+                    <li>
+                        Family-Based Association tests: They are immune to stratification because the alleles 
+                        have come from the same genetic ancestry. However the limitation is that information 
+                        between family is required to calculate the test statistic.  One way to fix this 
+                        limitation is to transform in between family information to a rank statistic then 
+                        combining the results within family information. This ensures that the tests are 
+                        completely immune to stratification.
+                    </li>
+                    <li>
+                        
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Results</h2>
+            </section>
+            <section>
+                <h2>Limitations</h2>
+
+                <section>
+                    <h2>References</h2>
+                    <cite></cite>
+                </section>
+
+        <footer>
+            <div class="contact-section" id="author-contact-information">
+            <label > Author Contact Information</label>
+               <div class="social-icons">
+                <a href="https://github.com/anguyen6262"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/andrew-nguyen-6b72b0216/"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100079858971896"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/andrew.d.ng/"><i class="fab fa-instagram"></i></a>
+            </div>
+            </div>
+        </footer>
+    </body>
+    </html>
