@@ -52,62 +52,107 @@
         <section>
             <h1>New approaches to population stratification in genome-wide association studies</h1>
             <h2>Purpose</h2>
-            <p>To review the advantages and disadvantages of methods for correcting stratification and determine the optimal method under certain conditions.
+            <p>To review the advantages and disadvantages of methods for correcting stratification and determine 
+                the optimal method under certain conditions.
             </p>
             <section>
                 <h2>Methods</h2>
                 <ul>
+                 
+                    The following are methods used to detect stratification. They use software such as PLINK, 
+                    EIGENSTRAT, STRUCTURE, STRAT, ADMIXTURE, AIMS.
+                  
+                 
                     <li>
-                        Structured Association: Can accurately correct stratification in datasets whos 
-                        population structure is the only type of sample structure. The data is grouped in 
-                        different subpopulations.  Then the association statistics are computed. These steps are 
-                        taken in software. Due to the large size of genome wide datasets these studies have high 
-                        computational costs. However there is always new development of software to reduce these 
-                        costs which would make structured association an excellent option for inferring population
-                        structure and computing association statistics.fail to account for family structure or
-                        cryptic relatedness
+                        The most common approach is to compute a genomic control (lambdaGC). If lambdaGC is 
+                        approximately equal to 1 then there is no stratification. Whereas a lambdaGC greater 
+                        than 1 means that there is some sort of stratification. However this approach is effective
+                        for populations from recent genetic drifts, but is inaccurate for ancient populations. 
+                        Genetic drift is the the process of dividing association statistics by lambda.
                     </li>
                     <li>
-                        PCA primarily shows the effects of differential bias. It removes the confounding effect 
-                        of when genotype isn’t associated with phenotype, but genotype and phenotype are both 
-                        associated with ancestry. PCA creates a greater correction to data that have greater 
+                        Structured Association: Accurately corrects stratification in datasets whose population 
+                        structure is the only type of sample structure. The data is grouped in different 
+                        subpopulations. Then the association statistics are computed. Due to the large size of 
+                        genome wide datasets these studies have high computational costs. However there is always
+                        new development of software to reduce these costs which would make structured association 
+                        an excellent option for inferring population structure and computing association 
+                        statistics. It is important to note that this method fails to account for family 
+                        structure and cryptic relatedness.
+                    </li>
+                    <li>
+                        PCA: Primarily shows the effects of differential bias. It removes the confounding effect 
+                        of when a genotype isn't associated with phenotype, but when a genotype and phenotype are 
+                        both associated with ancestry. PCA creates a greater correction to data that have greater
                         differences in allele frequencies. This makes sense because PC1 is created based on the 
-                        greatest variance of the data points. Limitations include not modeling cryptic relatedness
-                         and family structure. This can be improved by dividing by lambdaGC, but the test 
-                         statistics that account specifically for family structure will still not be accurate. 
-                         This also wouldn’t work if family structure is in the sample could potentially produce 
-                         spurious principal components. This is due to the lack of variance in genetic ancestry. 
-                         A solution to this problem is to use SNP loadings from a different sample in the same
-                          study that does have family structure. This is only possible if the size of the dataset
-                           is large enough. fail to account for family structure or cryptic relatedness. Another 
-                           limitation is that it only accounts for fixed effects and doesn’t take into account the
-                            relatedness of individuals. Variance can be because people are from different 
-                            population structures(different genotypes, same family). People are still developing PCA to work for more studies.  Currently the main solutions is deleting or not including some data. 
+                        greatest variance of the data points. This can be improved by dividing by lambdaGC, but 
+                        the test statistics that account specifically for family structure will still not be 
+                        accurate. This also wouldn't work if family structure in the sample could potentially 
+                        produce spurious principal components. This is due to the lack of variance in genetic 
+                        ancestry. A solution to this problem is to use SNP loadings from a different sample in 
+                        the same study that does have family structure. This is only possible if the size of the 
+                        dataset is large enough. Another limitation is that it only accounts for fixed effects 
+                        and doesn't take into account the relatedness of individuals. Variance can be because 
+                        people are from different population structures. PCA is still being developed and can 
+                        be used. Currently the main solution to correct its limitations  is to delete or not 
+                        include some data. 
                     </li>
                     <li>
                         Family-Based Association tests: They are immune to stratification because the alleles 
-                        have come from the same genetic ancestry. However the limitation is that information 
-                        between family is required to calculate the test statistic.  One way to fix this 
-                        limitation is to transform in between family information to a rank statistic then 
-                        combining the results within family information. This ensures that the tests are 
-                        completely immune to stratification.
+                        come from the same genetic ancestry. However the limitation is that information between 
+                        families is required to calculate the test statistic.  One way to fix this limitation is 
+                        to transform in between family information to a rank statistic then combining the results 
+                        within family information. This ensures that the tests are completely immune to 
+                        stratification.
                     </li>
                     <li>
-                        
+                        Mixed Models: This approach models the phenotypes as mixed, fixed or random effects. 
+                        This can be used to correct for family structure with PC covariates. It's debated on 
+                        whether to use fixed or random effects, random effects have proven to be effective in 
+                        stratification correction. The drawback is that this method is computationally intensive. 
                     </li>
                 </ul>
+                <p>
+                To compare these methods they conducted two simulations for each method. The sample consisted of 
+                two different populations. The first population had 300 cases and 200 controls whereas the second 
+                population had 200 cases and 300 controls. They used 99,900 normally differentiated markers. In 
+                simulation 1 everyone was unrelated. In simulation 2, population 1 individuals were unrelated and 
+                in population 2 there were sibling pairs in the population. They also calculated lambdaGC for a 
+                few methods with software to correct false positives. They only used one principal component for 
+                methods that involved PCA because including additional principal components had negligible effect 
+                on the results.
+                </p>
             </section>
 
             <section>
                 <h2>Results</h2>
+                <p>
+                They used P-P plots to detect stratification. These are functionally the same as QQ plots, 
+                except they use log transformed  p-values and plot lambdas. To determine the effectiveness of our 
+                stratification we look at the distance from the dots y=x. If everything was correct about our 
+                model then all the SNPs would be on  y=x. If a point is far from y=x right away then something is 
+                wrong with our model. If points start differing towards then that model is still effective. 
+                </p>
             </section>
-            <section>
-                <h2>Limitations</h2>
 
-                <section>
-                    <h2>References</h2>
-                    <cite></cite>
-                </section>
+            <section>
+            <section>
+                <h2>Conclusion</h2>
+                <p>
+                For studies where stratification is unimportant an effective method would be to use mixed 
+                models without principal component covariates and association tests are great for studies that 
+                don't involve datasets containing family structure or cryptic relatedness.
+                </p>
+            </section>
+                
+            <section>
+                <h2>References</h2>
+                <cite></cite>
+                <p>
+                Price, Alkes L, et al. “New Approaches to Population Stratification in Genome-Wide Association 
+                Studies.” Nature Reviews. Genetics, vol. 11, no. 7, 2010, pp. 459–63., https://doi.org/10.1038/nrg2813.
+                </p>
+            </section>
 
         <footer>
             <div class="contact-section" id="author-contact-information">
